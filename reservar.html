@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reservar | Alu Booking</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">ALU HOTEL</div>
+
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="/habitaciones">Habitaciones</a>
+        <a href="/reservar">Reservar</a>
+        <a href="/contacto">Contacto</a>
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h1>Reservá tu estadía</h1>
+
+    <p>Elegí fechas, habitación y mirá el precio en tiempo real</p>
+
+</section>
+
+
+<section>
+
+    <h2>Simulador de reserva</h2>
+
+    <div class="grid" style="max-width:700px;margin:0 auto;display:block;">
+
+        <div class="room" style="padding:30px;">
+
+            <label>Check-in</label>
+            <input type="date" id="checkin">
+
+            <label>Check-out</label>
+            <input type="date" id="checkout">
+
+            <label>Habitación</label>
+            <select id="habitacion">
+                <option value="single" data-price="39000">Single - $39.000</option>
+                <option value="doble" data-price="59000">Doble - $59.000</option>
+                <option value="triple" data-price="79000">Triple - $79.000</option>
+                <option value="suite" data-price="99000">Suite - $99.000</option>
+            </select>
+
+            <div class="price" style="margin-top:20px;">
+                Total: $<span id="total">0</span>
+            </div>
+
+            <a class="btn" href="#" onclick="confirmar()">Confirmar reserva</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script>
+
+function calcular() {
+
+    let inDate = document.getElementById("checkin").value;
+    let outDate = document.getElementById("checkout").value;
+
+    let select = document.getElementById("habitacion");
+    let price = select.options[select.selectedIndex].dataset.price;
+
+    if (!inDate || !outDate) return;
+
+    let d1 = new Date(inDate);
+    let d2 = new Date(outDate);
+
+    let diff = (d2 - d1) / (1000 * 60 * 60 * 24);
+
+    if (diff > 0) {
+        let total = diff * price;
+        document.getElementById("total").innerText = total.toLocaleString("es-AR");
+    }
+}
+
+document.getElementById("checkin").addEventListener("change", calcular);
+document.getElementById("checkout").addEventListener("change", calcular);
+document.getElementById("habitacion").addEventListener("change", calcular);
+
+function confirmar() {
+    alert("Reserva simulada creada ✔ (sin base de datos)");
+}
+
+</script>
+
+</body>
+</html>
