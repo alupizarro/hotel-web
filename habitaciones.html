@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <title>Habitaciones | Alu Booking Hotel</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -14,10 +14,10 @@
         ALU HOTEL
     </div>
     <nav>
-        <a href="/">Inicio</a>
-        <a href="/habitaciones">Habitaciones</a>
-        <a href="/reservar">Reservar</a>
-        <a href="/contacto">Contacto</a>
+        <a href="index.html">Inicio</a>
+        <a href="habitaciones.html">Habitaciones</a>
+        <a href="reservar.html">Reservar</a>
+        <a href="contacto.html">Contacto</a>
     </nav>
 </header>
 
@@ -27,68 +27,68 @@
 
         <!-- 1. HABITACIÓN SINGLE -->
         <div class="room">
-            <img src="/img/habitaciones/habitacion-single.jpg" alt="Habitación Single">
+            <img src="img/habitaciones/single.jpg" alt="Habitación Single">
             <h3>Habitación Single</h3>
             <p>Disfruta de una cómoda estadía individual con todos los servicios esenciales y la tranquilidad que necesitas.</p>
             <div class="price">
                 $ <span>59.900</span> / noche
             </div>
-            <a class="btn" th:href="@{/reservar(id=1)}">Reservar</a>
+            <a class="btn" href="reservar.html">Reservar</a>
         </div>
 
         <!-- 2. HABITACIÓN DOBLE -->
         <div class="room">
-            <img src="/img/habitaciones/habitacion-doble.jpg" alt="Habitación Doble">
+            <img src="img/habitaciones/doble.jpg" alt="Habitación Doble">
             <h3>Habitación Doble</h3>
-            <p>Espaciosa habitación con cama matrimonial, ideal para parejas que buscan confort y descanso.</p>
+            <p>Espaciosa habitación con cama matrimonial, ideal para parejas que buscan confort and descanso.</p>
             <div class="price">
                 $ <span>99.900</span> / noche
             </div>
-            <a class="btn" th:href="@{/reservar(id=2)}">Reservar</a>
+            <a class="btn" href="reservar.html">Reservar</a>
         </div>
 
         <!-- 3. DOBLE TWIN -->
         <div class="room">
-            <img src="/img/habitaciones/doble-twin.jpg" alt="Doble Twin">
+            <img src="img/habitaciones/doble-twin.jpg" alt="Doble Twin">
             <h3>Doble Twin</h3>
             <p>Perfecta para dos personas, equipada con dos camas individuales independientes y ambiente confortable.</p>
             <div class="price">
                 $ <span>99.900</span> / noche
             </div>
-            <a class="btn" th:href="@{/reservar(id=3)}">Reservar</a>
+            <a class="btn" href="reservar.html">Reservar</a>
         </div>
 
         <!-- 4. HABITACIÓN TRIPLE -->
         <div class="room">
-            <img src="/img/habitaciones/habitacion-triple.jpg" alt="Habitación Triple">
+            <img src="img/habitaciones/triple.jpg" alt="Habitación Triple">
             <h3>Habitación Triple</h3>
             <p>Amplio espacio diseñado para tres huéspedes, combinando comodidad y la mejor distribución.</p>
             <div class="price">
                 $ <span>139.900</span> / noche
             </div>
-            <a class="btn" th:href="@{/reservar(id=4)}">Reservar</a>
+            <a class="btn" href="reservar.html">Reservar</a>
         </div>
 
         <!-- 5. HABITACIÓN TRIPLE TWIN -->
         <div class="room">
-            <img src="/img/habitaciones/habitacion-triple-twin.jpg" alt="Habitación Triple Twin">
+            <img src="img/habitaciones/triple-twin.jpg" alt="Habitación Triple Twin">
             <h3>Habitación Triple Twin</h3>
             <p>Habitación funcional equipada con tres camas individuales, excelente para viajes grupales o familiares.</p>
             <div class="price">
                 $ <span>139.900</span> / noche
             </div>
-            <a class="btn" th:href="@{/reservar(id=5)}">Reservar</a>
+            <a class="btn" href="reservar.html">Reservar</a>
         </div>
 
         <!-- 6. SUITE -->
         <div class="room">
-            <img src="/img/habitaciones/habitacion-suite.jpg" alt="Suite">
+            <img src="img/habitaciones/suite.jpg" alt="Suite">
             <h3>Suite</h3>
             <p>Nuestra opción de máximo lujo. Amplios ambientes, vistas preferenciales y detalles premium para tu estadía.</p>
             <div class="price">
                 $ <span>199.900</span> / noche
             </div>
-            <a class="btn" th:href="@{/reservar(id=6)}">Reservar</a>
+            <a class="btn" href="reservar.html">Reservar</a>
         </div>
 
     </div>

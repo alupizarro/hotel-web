@@ -14,13 +14,9 @@ html{
 }
 
 body{
-
     font-family:'Segoe UI',sans-serif;
-
     background:#f8f4fb;
-
     color:#6b5d7b;
-
 }
 
 /* ==========================
@@ -28,79 +24,46 @@ body{
 ========================== */
 
 header{
-
     position:fixed;
-
     top:0;
-
     left:0;
-
     width:100%;
-
     height:82px;
-
     background:rgba(246,241,250,.92);
-
     backdrop-filter:blur(16px);
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
     padding:0 70px;
-
     box-shadow:0 8px 24px rgba(90,60,120,.08);
-
     z-index:9999;
-
 }
 
 .logo{
-
     font-size:33px;
-
     font-weight:700;
-
     color:#8d73b8;
-
     letter-spacing:2px;
-
 }
 
 nav{
-
     display:flex;
-
     gap:18px;
-
 }
 
 nav a{
-
     text-decoration:none;
-
     color:#7a6898;
-
     font-size:15px;
-
     font-weight:600;
-
     transition:.25s;
-
     padding:10px 18px;
-
     border-radius:30px;
-
 }
 
 nav a:hover{
-
     background:#ded1ee;
-
     color:#66527e;
-
 }
 
 /* ==========================
@@ -108,43 +71,22 @@ nav a:hover{
 ========================== */
 
 .hero{
-
     margin-top:82px;
-
-    min-height:88vh;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
     text-align:center;
-
-    padding:70px 30px;
-
+    padding:30px 0px 10px 0px;
 }
 
 .hero h1{
-
-    font-size:64px;
-
+    font-size:46px;
     color:#6d5987;
-
-    margin-bottom:20px;
-
+    margin-bottom:5px;
     font-weight:300;
-
 }
 
 .hero p{
-
-    font-size:22px;
-
+    font-size:18px;
     color:#8d7b9f;
-
-    line-height:1.8;
-
+    line-height:1.6;
 }
 
 /* ==========================
@@ -152,33 +94,20 @@ nav a:hover{
 ========================== */
 
 .btn{
-
     display:inline-block;
-
-    margin-top:35px;
-
+    margin-top:25px;
     background:#a68bc7;
-
     color:white;
-
-    padding:16px 34px;
-
+    padding:14px 30px;
     border-radius:40px;
-
     text-decoration:none;
-
     font-weight:600;
-
     transition:.25s;
-
 }
 
 .btn:hover{
-
     background:#9276b7;
-
     transform:translateY(-3px);
-
 }
 
 /* ==========================
@@ -186,23 +115,15 @@ nav a:hover{
 ========================== */
 
 section{
-
-    padding:90px 8%;
-
+    padding:20px 8%;
 }
 
 h2{
-
     text-align:center;
-
-    font-size:38px;
-
+    font-size:28px;
     color:#715f8c;
-
-    margin-bottom:55px;
-
+    margin-bottom:25px;
     font-weight:300;
-
 }
 
 /* ==========================
@@ -210,75 +131,46 @@ h2{
 ========================== */
 
 .grid{
-
     display:grid;
-
     grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
-
     gap:35px;
-
 }
 
 .room{
-
     background:white;
-
     border-radius:22px;
-
     overflow:hidden;
-
     box-shadow:0 15px 35px rgba(80,60,120,.08);
-
     transition:.25s;
-
 }
 
 .room:hover{
-
     transform:translateY(-8px);
-
 }
 
 .room img{
-
     width:100%;
-
     height:250px;
-
     object-fit:cover;
-
 }
 
 .room h3{
-
     padding:20px 25px 8px;
-
     color:#6b5a83;
-
     font-size:28px;
-
 }
 
 .room p{
-
     padding:0 25px;
-
     color:#88789b;
-
     line-height:1.7;
-
 }
 
 .price{
-
     padding:18px 25px;
-
     font-size:24px;
-
     color:#8b6ab3;
-
     font-weight:bold;
-
 }
 
 /* ==========================
@@ -287,29 +179,18 @@ h2{
 
 input,
 select{
-
     width:100%;
-
     padding:14px;
-
     border:1px solid #ddd;
-
     border-radius:12px;
-
     margin-top:8px;
-
     margin-bottom:18px;
-
     font-size:15px;
-
 }
 
 button{
-
     border:none;
-
     cursor:pointer;
-
 }
 
 /* ==========================
@@ -317,17 +198,11 @@ button{
 ========================== */
 
 footer{
-
     background:#efe7f6;
-
     text-align:center;
-
     padding:35px;
-
     color:#85749d;
-
-    margin-top:70px;
-
+    margin-top:40px;
 }
 
 /* ==========================
@@ -336,26 +211,18 @@ footer{
 
 @media(max-width:900px){
 
-header{
+    header{
+        padding:0 20px;
+    }
 
-padding:0 20px;
+    .hero h1{
+        font-size:36px;
+    }
 
-}
-
-.hero h1{
-
-font-size:44px;
-
-}
-
-nav{
-
-gap:8px;
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-}
+    nav{
+        gap:8px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
 
 }
